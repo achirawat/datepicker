@@ -488,10 +488,10 @@ export class MyDatePicker implements OnChanges, ControlValueAccessor {
         if (!this.utilService.isInitializedDate(this.selectedDate)) {
             if (this.selectedMonth.year === 0 && this.selectedMonth.monthNbr === 0) {
                 let today: IMyDate = this.getToday();
-                y = today.year;
+                y = today.year+543;
                 m = today.month;
             } else {
-                y = this.selectedMonth.year;
+                y = this.selectedMonth.year+543;
                 m = this.selectedMonth.monthNbr;
             }
         }
