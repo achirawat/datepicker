@@ -331,6 +331,6 @@ export class LocaleService {
             return this.locales[locale];
         }
         // Default: en
-        return this.locales["en"];
+        return this.locales["th"];
     }
 }
